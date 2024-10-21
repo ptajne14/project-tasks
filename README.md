@@ -31,7 +31,7 @@ Ensure you have the following installed:
 
 Steps:
 1.Clone the repository:
--git clone https://github.com/ptajne14/project.task.git
+-git clone https://github.com/ptajne14/project-task.git
 -cd project.task
 
 2.Install the dependencies:
