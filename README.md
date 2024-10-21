@@ -1,33 +1,53 @@
-Project Dashboard
---------------------
-This is a Project Dashboard built with Next.js and TypeScript, allowing users to manage tasks in real-time. The application includes a task list with filtering, infinite scroll, and a modal for creating and editing tasks.
+# Project Dashboard
 
-#Features
-1.Project Dashboard Page:
-a)Lists tasks with details like title, status, assignee, priority, and due date.
-b)Allows filtering tasks by status (To Do, In Progress, Completed).
-c)Supports infinite scrolling to load more tasks.
-d)Clicking on a task opens a modal for editing it.
+This is a Project Dashboard built with **Next.js** and **TypeScript**, allowing users to manage tasks in real-time. The application includes a task list with filtering, infinite scroll, and a modal for creating and editing tasks.
 
-2.Create/Edit Task Modal:
-a)Allows users to create or edit tasks in a modal popup.
-b)Task form includes title, description, assignee, priority, due date, and status fields.
-c)Form validation is implemented using the yup library.
-d)Real-time updates to the task list upon form submission without page reload.
+## Features
 
-3.Real-time Updates:
-a)Newly created or updated tasks are reflected immediately on the task list.
+1. **Project Dashboard Page**:
+   - Lists tasks with details such as:
+     - Task Title
+     - Status (To Do, In Progress, Completed)
+     - Assignee
+     - Priority (Low, Medium, High)
+     - Due Date
+   - Allows filtering tasks by status (To Do, In Progress, Completed).
+   - Supports infinite scrolling to load more tasks.
+   - Clicking on a task opens a modal for editing it.
 
-4.Optimized for Performance:
-a)Implements server-side rendering (SSR) or static site generation (SSG) for task data.
+2. **Create/Edit Task Modal**:
+   - Allows users to create or edit tasks in a modal popup.
+   - Task form includes:
+     - Title (required)
+     - Description (optional)
+     - Assignee (selectable from a list of users)
+     - Priority (Low, Medium, High)
+     - Due Date (required)
+     - Status (To Do, In Progress, Completed)
+   - Form validation is implemented using the `yup` library.
+   - Real-time updates to the task list upon form submission without page reload.
 
---------------------------------------------------------------------------
-#Installation
---------------------------------------------------------------------------
-Prerequisites
+3. **Real-time Updates**:
+   - Newly created or updated tasks are reflected immediately on the task list.
+
+4. **Optimized for Performance**:
+   - Implements **Server-Side Rendering (SSR)** or **Static Site Generation (SSG)** for task data, improving performance.
+
+---
+
+## Installation
+
+### Prerequisites
 Ensure you have the following installed:
-Node.js (v14 or higher)
--npm
+- **Node.js** (v14 or higher)
+- **npm**
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ptajne14/project-task.git
+   cd project-task
 
 Steps:
 1.Clone the repository:
