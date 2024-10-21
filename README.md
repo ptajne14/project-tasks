@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Project Dashboard
+--------------------
+This is a Project Dashboard built with Next.js and TypeScript, allowing users to manage tasks in real-time. The application includes a task list with filtering, infinite scroll, and a modal for creating and editing tasks.
 
-## Getting Started
+#Features
+1.Project Dashboard Page:
+-Lists tasks with details like title, status, assignee, priority, and due date.
+=Allows filtering tasks by status (To Do, In Progress, Completed).
+-Supports infinite scrolling to load more tasks.
+-Clicking on a task opens a modal for editing it.
 
-First, run the development server:
+2.Create/Edit Task Modal:
+-Allows users to create or edit tasks in a modal popup.
+-Task form includes title, description, assignee, priority, due date, and status fields.
+-Form validation is implemented using the yup library.
+-Real-time updates to the task list upon form submission without page reload.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3.Real-time Updates:
+-Newly created or updated tasks are reflected immediately on the task list.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4.Optimized for Performance:
+-Implements server-side rendering (SSR) or static site generation (SSG) for task data.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+--------------------------------------------------------------------------
+#Installation
+--------------------------------------------------------------------------
+Prerequisites
+Ensure you have the following installed:
+-Node.js (v14 or higher)
+-npm
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Steps:
+1.Clone the repository:
+-git clone https://github.com/ptajne14/project.task.git
+-cd project.task
 
-## Learn More
+2.Install the dependencies:
+-npm install
 
-To learn more about Next.js, take a look at the following resources:
+3.Start the development server:
+-npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.Open your browser and go to http://localhost:3000 to view the app.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-------------------------------------------------------------------------
 
-## Deploy on Vercel
+#Usage
+-Task Management: On the dashboard, you can create, edit, or view tasks by clicking on them.
+-Filtering: Use the dropdown to filter tasks based on their status.
+-Infinite Scroll: Scroll down to automatically load more tasks when the end of the list is reached.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Tech Stack
+-Next.js: Framework for React applications with built-in SSR/SSG capabilities.
+-TypeScript: Provides static typing to help with better code maintainability.
+-Formik + Yup: For form handling and validation.
+-CSS: Tailored for responsive and clean UI design.
+
+*Assumptions
+-Tasks are fetched from a static data.json file placed in the /public folder, assuming this is the source of task data for SSR/SSG purposes.
+
+*Additional Features Implemented
+-Infinite Scroll: Instead of traditional pagination, tasks are loaded progressively as you scroll down the list.
+-Real-Time Task Update: Upon task creation or editing, the dashboard updates in real time without a page reload.
