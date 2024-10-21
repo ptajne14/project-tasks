@@ -49,36 +49,31 @@ Ensure you have the following installed:
    git clone https://github.com/ptajne14/project-task.git
    cd project-task
 
-Steps:
-1.Clone the repository:
-  a)git clone https://github.com/ptajne14/project-task.git
-  b)cd project.task
-
 2.Install the dependencies: 
-  a)npm install
+   npm install
 
-3.Start the development server: 
-  a)npm run dev
+3.Start the development server:  
+   npm run dev
 
 4.Open your browser and go to http://localhost:3000 to view the app.
 
 -------------------------------------------------------------------------
 
-#Usage
-a)Task Management: On the dashboard, you can create, edit, or view tasks by clicking on them.
-b)Filtering: Use the dropdown to filter tasks based on their status.
-c)Infinite Scroll: Scroll down to automatically load more tasks when the end of the list is reached.
+## Usage
+ - Task Management: On the dashboard, you can create, edit, or view tasks by clicking on them.
+ - Filtering: Use the dropdown to filter tasks based on their status.
+ - Infinite Scroll: Scroll down to automatically load more tasks when the end of the list is reached.
 
 
-*Tech Stack
-a)Next.js: Framework for React applications with built-in SSR/SSG capabilities.
-b)TypeScript: Provides static typing to help with better code maintainability.
-c)Formik + Yup: For form handling and validation.
-d)CSS: Tailored for responsive and clean UI design.
+## Tech Stack
+- Next.js: Framework for React applications with built-in SSR/SSG capabilities.
+- TypeScript: Provides static typing to help with better code maintainability.
+- Formik + Yup: For form handling and validation.
+- CSS: Tailored for responsive and clean UI design.
 
-*Assumptions
-a)Tasks are fetched from a static data.json file placed in the /public folder, assuming this is the source of task data for SSR/SSG purposes.
+## Assumptions
+- Tasks are fetched from a static data.json file placed in the /public folder, assuming this is the source of task data for SSR/SSG purposes.
 
-*Additional Features Implemented
-a)Infinite Scroll: Instead of traditional pagination, tasks are loaded progressively as you scroll down the list.
-b)Real-Time Task Update: Upon task creation or editing, the dashboard updates in real time without a page reload.
+## Additional Features Implemented
+- Infinite Scroll: Instead of traditional pagination, tasks are loaded progressively as you scroll down the list.
+- Real-Time Task Update: Upon task creation or editing, the dashboard updates in real time without a page reload.
